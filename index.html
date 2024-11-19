@@ -11,12 +11,12 @@
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,25 +24,25 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Welcome to Our Product</h1>
-            <p>Empowering Your Business with the Latest Technology</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1 class="fade-in">Welcome to Our Product</h1>
+            <p class="fade-in-delay">Empowering Your Business with the Latest Technology</p>
+            <a href="#contact" class="cta-button slide-up">Get Started</a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features">
-        <h2>Our Features</h2>
+        <h2 class="section-title">Our Features</h2>
         <div class="features-container">
-            <div class="feature">
+            <div class="feature slide-in">
                 <h3>Feature 1</h3>
                 <p>Our first feature offers unmatched performance and reliability.</p>
             </div>
-            <div class="feature">
+            <div class="feature slide-in">
                 <h3>Feature 2</h3>
                 <p>Enjoy seamless integration with modern tools and technologies.</p>
             </div>
-            <div class="feature">
+            <div class="feature slide-in">
                 <h3>Feature 3</h3>
                 <p>Get real-time data and analytics to make informed decisions.</p>
             </div>
@@ -51,11 +51,11 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2 class="section-title">Contact Us</h2>
         <form>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="cta-button">Send Message</button>
         </form>
     </section>
 
@@ -63,6 +63,8 @@
     <footer>
         <p>&copy; 2024 Landing Page. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
