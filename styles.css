@@ -15,12 +15,31 @@ body {
 /* Styling for links */
 a {
     text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
+    color: #4CAF50; /* Primary color for links */
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
 }
 
 a:hover {
-    color: #4CAF50;
+    color: #45a049;
+    transform: translateY(-2px);
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 /* Header Styling */
@@ -55,7 +74,7 @@ header nav ul li a:hover {
 
 /* Hero Section Styling */
 #hero {
-    background-image: url('your-image.jpg'); /* Add a background image */
+    background-image: url('your-image.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -67,7 +86,7 @@ header nav ul li a:hover {
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
 }
