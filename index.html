@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdulla Nabil - Portfolio</title>
+    <title>Modern Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <!-- Header / Hero Section -->
+<body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Abdulla Nabil - a Computer Engineer with a passion for creating innovative and impactful software solutions. I specialize in front-end and back-end development, with experience in modern frameworks and programming languages like JavaScript, Python, and more.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m a recent graduate in Computer Engineering with a strong interest in web and software development. My journey in tech started with a curiosity for problem-solving and creating solutions that can positively impact users and businesses alike.</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Product</h1>
+            <p>Empowering Your Business with the Latest Technology</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Brief description...</li>
-            <li><strong>Project 2:</strong> Brief description...</li>
-            <li><strong>Project 3:</strong> Brief description...</li>
-        </ul>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Our first feature offers unmatched performance and reliability.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Enjoy seamless integration with modern tools and technologies.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 3</h3>
+                <p>Get real-time data and analytics to make informed decisions.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>Connect with me on <a href="https://www.github.com/abdullanabdulaziz" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/abdulla-abdulaziz" target="_blank">LinkedIn</a></p>
+        <p>&copy; 2024 Landing Page. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
